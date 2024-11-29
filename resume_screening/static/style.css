@@ -1,0 +1,232 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f9ff;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header */
+header {
+    margin-bottom: 40px;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    color: #4CAF50;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Form Section */
+form {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    margin: 0 auto;
+    animation: slideUp 0.8s ease-in-out;
+}
+
+form label {
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+form input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px dashed #4CAF50;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+form input[type="file"]:hover {
+    border-color: #45a049;
+    background-color: #e9fbe9;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+/* Results Section */
+.results {
+    margin-top: 40px;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.results h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.results p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.results ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.results ul li {
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+/* Graph Section */
+.graph-section {
+    margin-top: 40px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.graph-section img {
+    display: inline-block;
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1rem;
+    color: #555;
+    padding-bottom: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    form button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .results h2 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    form button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .results h2 {
+        font-size: 1.5rem;
+    }
+
+    .results p {
+        font-size: 0.9rem;
+    }
+}
